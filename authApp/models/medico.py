@@ -1,8 +1,6 @@
 from django.db import models
 from .user import User
 
-
-
 class Medico(models.Model):
     idmedico = models.IntegerField(primary_key=True)
     nombre = models.CharField('Nombre',max_length=20)
@@ -11,7 +9,7 @@ class Medico(models.Model):
     email = models.CharField('Email',max_length=100)
     especialidad = models.CharField('Especialidad',max_length=30)
     genero = models.CharField('Genero',max_length=20)
-    iduser = models.ForeignKey(User, related_name='id', on_delete=models.CASCADE)
+    user = models.ForeignKey(User, related_name='Medico', on_delete=models.CASCADE)
     
 
     

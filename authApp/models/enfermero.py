@@ -8,7 +8,7 @@ class Enfermero(models.Model):
     telefono = models.CharField('Telefono',max_length=15)
     email = models.CharField('Email',max_length=100)
     genero = models.CharField('Genero',max_length=20)
-    iduser = models.ForeignKey(User, related_name='id', on_delete=models.CASCADE)
+    user = models.ForeignKey(User, related_name='Enfermero', on_delete=models.CASCADE)
     
 
     

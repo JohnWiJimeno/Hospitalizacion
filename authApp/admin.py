@@ -11,9 +11,6 @@ from .models.signosvitales import Signosvitales
 from .models.detallesignos import Detallesignos
 
 
-
-
-
 admin.site.register(User)
 admin.site.register(Medico)
 admin.site.register(Enfermero)
@@ -24,7 +21,5 @@ admin.site.register(Paciente)
 admin.site.register(Historiaclinica)
 admin.site.register(Signosvitales)
 admin.site.register(Detallesignos)
-
-
 
 # Register your models here.
