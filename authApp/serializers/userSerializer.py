@@ -1,9 +1,9 @@
 from rest_framework import serializers
-from authApp.models.user import user
+from authApp.models.user import User
 
 
 class userSerializer(serializers.ModelSerializer):
 
     class Meta:
-        model: user
+        model: User
         fields = ['id', 'username', 'password', 'name', 'email']
