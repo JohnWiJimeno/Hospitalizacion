@@ -7,5 +7,5 @@ class enfermeroSerializer(serializers.ModelSerializer):
    
     class Meta:
         model = Enfermero
-        fields = ['idenfermero', 'nombre', 'apellido', 'correo', 'telefono','idusuario']
+        fields = ['idenfermero', 'nombre', 'apellido', 'correo', 'telefono','user']
 
