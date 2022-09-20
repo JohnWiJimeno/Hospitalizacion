@@ -5,5 +5,5 @@ from authApp.models.medico import medico
 class medicoSerializer(serializers.ModelSerializer):
 
     class Meta:
-        model: medico
-        fields = ['idmedico', 'nombre', 'apellidos','telefono', 'email', 'especialidad', 'genero', 'user']
+        model = Medico
+        fields = ['idmedico', 'nombre', 'apellido', 'telefono','correo', 'especialidad','idusuario']
