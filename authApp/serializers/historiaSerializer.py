@@ -1,9 +1,9 @@
 from rest_framework import serializers
-from authApp.models.historia import historia
+from authApp.models.historia import Historia
 
 
 class historiaSerializer(serializers.ModelSerializer):
 
     class Meta:
-        model: historia
+        model: Historia
         fields = ['idhistoria', 'idpaciente', 'idsugerencia','encasa']
