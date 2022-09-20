@@ -1,9 +1,9 @@
 from rest_framework import serializers
-from authApp.models.signosvitales import signosvitales
+from authApp.models.signosvitales import Signosvitales
 
 
 class signosvitalesSerializer(serializers.ModelSerializer):
 
     class Meta:
-        model: signosvitales
+        model: Signosvitales
         fields = ['idsignosvitales', 'nombre']
