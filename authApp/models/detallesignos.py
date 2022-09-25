@@ -6,6 +6,6 @@ from .paciente import Paciente
 
 class Detallesignos(models.Model):
     iddetalle = models.AutoField(primary_key=True)
-    idsignosvitales = models.ForeignKey(Signosvitales, related_name='Detallesignos', on_delete=models.CASCADE) 
-    idpaciente = models.ForeignKey(Paciente, related_name='Detallesignos', on_delete=models.CASCADE)
+    idsignosvitales = models.ForeignKey(Signosvitales, related_name='detallesignos', on_delete=models.CASCADE) 
+    idpaciente = models.ForeignKey(Paciente, related_name='detallesignos', on_delete=models.CASCADE)
     detalle = models.CharField('Detalle',max_length=500)

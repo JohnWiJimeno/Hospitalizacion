@@ -7,6 +7,8 @@ from authApp.serializers import EnfermeroSerializer
 
 
 
+
+
 @api_view(['GET','POST'])
 def enfermero_api_view(request):
     if request.method == 'GET':

@@ -9,7 +9,7 @@ class Medico(models.Model):
     email = models.CharField('Email',max_length=100)
     especialidad = models.CharField('Especialidad',max_length=30)
     genero = models.CharField('Genero',max_length=20)
-    user = models.ForeignKey(User, related_name='Medico', on_delete=models.CASCADE)
+    user = models.ForeignKey(User, related_name='medico', on_delete=models.CASCADE)
     
 
     
