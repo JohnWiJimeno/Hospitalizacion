@@ -2,7 +2,7 @@ from rest_framework import serializers
 from authApp.models.sugerencia import Sugerencia
 
 
-class sugerenciaSerializer(serializers.ModelSerializer):
+class SugerenciaSerializer(serializers.ModelSerializer):
 
     class Meta:
         model: Sugerencia
