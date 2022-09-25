@@ -4,14 +4,7 @@ from rest_framework.decorators import api_view
 from rest_framework.views import APIView
 from authApp.models import Enfermero
 from authApp.serializers import EnfermeroSerializer
-from django.utils.decorators import method_decorator
-from django.views.decorators.csrf import csrf_exempt
 
-"""
-/*@method_decorator(csrf_exmempt)
-def def dispatch(self, request, *args, **kwargs):
-    return super().dispatch(request, *args, **kwargs)
-*/"""
 
 
 @api_view(['GET','POST'])
