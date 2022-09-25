@@ -2,7 +2,7 @@ from rest_framework import serializers
 from authApp.models.paciente import Paciente
 
 
-class pacienteSerializer(serializers.ModelSerializer):
+class PacienteSerializer(serializers.ModelSerializer):
 
     class Meta:
         model: Paciente
