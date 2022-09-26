@@ -10,6 +10,5 @@ class Familiar(models.Model):
     
     
     
-    
 
     

@@ -6,5 +6,5 @@ class MedicoSerializer(serializers.ModelSerializer):
    
     class Meta:
         model = Medico
-        fields = ['idmedico', 'nombre', 'apellido', 'telefono','correo', 'especialidad','genero','user']
+        fields = ['idmedico', 'nombre', 'apellidos', 'telefono','email', 'especialidad','genero','user']
 

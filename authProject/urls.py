@@ -24,5 +24,13 @@ urlpatterns = [
     path('user/', views.UserCreateView.as_view()),
     path('user/<int:pk>/', views.UserDetailView.as_view()),
     path('enfermero/', views.enfermero_api_view),
-    path('enfermero/<int:pk>',views.enfermero_detail_view)
+    path('enfermero/<int:pk>',views.enfermero_detail_view),
+    path('familiar/', views.familiar_api_view),
+    path('familiar/<int:pk>',views.familiar_detail_view),
+    path('auxiliar/', views.auxiliar_api_view),
+    path('auxiliar/<int:pk>',views.auxiliar_detail_view),
+    path('medico/', views.medico_api_view),
+    path('medico/<int:pk>',views.medico_detail_view),
+    path('paciente/', views.paciente_api_view),
+    path('paciente/<int:pk>',views.paciente_detail_view)
 ]

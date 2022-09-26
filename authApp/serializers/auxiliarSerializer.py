@@ -7,4 +7,4 @@ class AuxiliarSerializer(serializers.ModelSerializer):
    
     class Meta:
         model = Auxiliar
-        fields = ['idauxiliar', 'nombre', 'apellido', 'correo', 'telefono','user']
+        fields = ['idauxiliar', 'nombre', 'apellidos', 'telefono', 'email', 'genero', 'user']
