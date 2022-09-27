@@ -25,6 +25,7 @@ SECRET_KEY = 'django-insecure-6o-y=v5w177crf^-s^lv1y#utsy08+q+txr8mu%z$4#gs!=9%$
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
+CORS_ALLOW_ALL_ORIGINS = True
 
 ALLOWED_HOSTS = []
 
@@ -67,6 +68,13 @@ MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
 ]
 
+CORS_ALLOWED_ORIGINS = [
+    "https://example.com",
+    "https://sub.example.com",
+    "http://localhost:8080",
+     "http://127.0.0.1:9000",
+]
+
 REST_FRAMEWORK = {
             'DEFAULT_PERMISSION_CLASSES': (
                     'rest_framework.permissions.AllowAny',
@@ -77,6 +85,7 @@ REST_FRAMEWORK = {
 }
 
 AUTH_USER_MODEL = 'authApp.User'
+
 
 ROOT_URLCONF = 'authProject.urls'
 
@@ -112,6 +121,7 @@ DATABASES = {
         'PORT': '5432',
     }
 }
+
 
 
 # Password validation
