@@ -2,10 +2,10 @@ from rest_framework import serializers
 from authApp.models.paciente import Paciente
 
 
-class pacienteSerializer(serializers.ModelSerializer):
+class PacienteSerializer(serializers.ModelSerializer):
 
     class Meta:
-        model: Paciente
+        model = Paciente
         fields = ['idpaciente', 'nombre', 'apellidos','ciudad', 'direccion', 
-        'fechanacimiento', 'latitud', 'longitud', 'email', 'idfamiliar', 'idmedico',
-        'idenfermero', 'idauxiliar', 'user']
+        'fechanacimiento', 'latitud', 'longitud', 'email', 'idauxiliar', 'idenfermero', 'idfamilar', 'idmedico',
+        'user']

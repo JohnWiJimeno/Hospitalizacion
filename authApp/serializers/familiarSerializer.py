@@ -2,8 +2,8 @@ from rest_framework import serializers
 from authApp.models.familiar import Familiar
 
 
-class familiarSerializer(serializers.ModelSerializer):
+class FamiliarSerializer(serializers.ModelSerializer):
 
     class Meta:
-        model: Familiar
-        fields = ['idfamiliar', 'nombre', 'apellidos','parentesco', 'email','telefono']
+        model = Familiar
+        fields = ['idfamiliar', 'nombre', 'apellidos', 'parentesto', 'email', 'telefono']
