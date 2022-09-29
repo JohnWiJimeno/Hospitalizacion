@@ -5,6 +5,6 @@ from .auxiliarSerializer import AuxiliarSerializer
 from .familiarSerializer import FamiliarSerializer
 from .sugerenciaSerializer import SugerenciaSerializer
 from .pacienteSerializer import PacienteSerializer
-from .historiaSerializer import HistoriaclinicaSerializer
+from .historiaSerializer import HistoriaSerializer
 from .signosvitalesSerializer import SignosvitalesSerializer
 from .detallesignosSerializer import DetallesignosSerializer

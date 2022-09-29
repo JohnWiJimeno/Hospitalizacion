@@ -19,7 +19,7 @@ class Paciente(models.Model):
     email = models.CharField('Email',max_length=100)
     idauxiliar = models.ForeignKey(Auxiliar, related_name='Paciente', on_delete=models.CASCADE)
     idenfermero = models.ForeignKey(Enfermero, related_name='Paciente', on_delete=models.CASCADE)
-    idfamiliar = models.ForeignKey(Familiar, related_name='Paciente', on_delete=models.CASCADE)
+    idfamilar = models.ForeignKey(Familiar, related_name='Paciente', on_delete=models.CASCADE)
     idmedico = models.ForeignKey(Medico, related_name='Paciente', on_delete=models.CASCADE)
     user = models.ForeignKey(User, related_name='Paciente', on_delete=models.CASCADE)
     

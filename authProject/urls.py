@@ -32,5 +32,13 @@ urlpatterns = [
     path('medico/', views.medico_api_view),
     path('medico/<int:pk>',views.medico_detail_view),
     path('paciente/', views.paciente_api_view),
-    path('paciente/<int:pk>',views.paciente_detail_view)
+    path('paciente/<int:pk>',views.paciente_detail_view),
+    path('historia/', views.historia_api_view),
+    path('historia/<int:pk>',views.historia_detail_view),
+    path('signosvitales/', views.signosvitales_api_view),
+    path('signosvitales/<int:pk>',views.signosvitales_detail_view),
+    path('detallesignos/', views.detallesignos_api_view),
+    path('detallesignos/<int:pk>',views.detallesignos_detail_view),
+    path('sugerencia/', views.sugerencia_api_view),
+    path('sugerencia/<int:pk>',views.sugerencia_detail_view)
 ]
