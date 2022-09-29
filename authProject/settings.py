@@ -25,6 +25,7 @@ SECRET_KEY = 'django-insecure-6o-y=v5w177crf^-s^lv1y#utsy08+q+txr8mu%z$4#gs!=9%$
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
+CORS_ALLOW_ALL_ORIGINS = True
 
 ALLOWED_HOSTS = []
 
@@ -41,6 +42,7 @@ INSTALLED_APPS = [
     'corsheaders',
     'rest_framework',
     'authApp',
+    'corsheaders',
 ]
 
 SIMPLE_JWT = {
@@ -65,6 +67,14 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
+]
+
+CORS_ALLOWED_ORIGINS = [
+    "https://example.com",
+    "https://sub.example.com",
+    "http://localhost:8080",
+     "http://127.0.0.1:9000",
 ]
 
 REST_FRAMEWORK = {
@@ -77,6 +87,7 @@ REST_FRAMEWORK = {
 }
 
 AUTH_USER_MODEL = 'authApp.User'
+
 
 ROOT_URLCONF = 'authProject.urls'
 
@@ -112,6 +123,7 @@ DATABASES = {
         'PORT': '5432',
     }
 }
+
 
 
 # Password validation
@@ -154,3 +166,6 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+import django_heroku
+django_heroku.settings(locals())

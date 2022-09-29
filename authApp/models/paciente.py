@@ -17,9 +17,16 @@ class Paciente(models.Model):
     latitud = models.CharField('Latitud',max_length=30)
     longitud = models.CharField('Longitud',max_length=30)
     email = models.CharField('Email',max_length=100)
+<<<<<<< HEAD
     idauxiliar = models.ForeignKey(Auxiliar, related_name='Paciente', on_delete=models.CASCADE)
     idenfermero = models.ForeignKey(Enfermero, related_name='Paciente', on_delete=models.CASCADE)
     idfamilar = models.ForeignKey(Familiar, related_name='Paciente', on_delete=models.CASCADE)
     idmedico = models.ForeignKey(Medico, related_name='Paciente', on_delete=models.CASCADE)
+=======
+    idfamilar = models.ForeignKey(Familiar, related_name='paciente', on_delete=models.CASCADE)
+    idmedico = models.ForeignKey(Medico, related_name='paciente', on_delete=models.CASCADE)
+    idenfermero = models.ForeignKey(Enfermero, related_name='paciente', on_delete=models.CASCADE)
+    idauxiliar = models.ForeignKey(Auxiliar, related_name='paciente', on_delete=models.CASCADE)
+>>>>>>> 36d994949627123dfbbf025f32099bc54f8c969a
     user = models.ForeignKey(User, related_name='Paciente', on_delete=models.CASCADE)
     

@@ -8,7 +8,7 @@ class Auxiliar(models.Model):
     telefono = models.CharField('telefono',max_length=15)
     email = models.CharField('Email',max_length=100)
     genero = models.CharField('Genero',max_length=20)
-    user = models.ForeignKey(User, related_name='Auxiliar', on_delete=models.CASCADE)
+    user = models.ForeignKey(User, related_name='auxiliar', on_delete=models.CASCADE)
     
 
     

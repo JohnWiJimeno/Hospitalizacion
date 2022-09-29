@@ -1,5 +1,6 @@
 from .userCreateView import UserCreateView
 from .userDetailView import UserDetailView
+<<<<<<< HEAD
 from .enfermeroViewCrud import enfermero_api_view
 from .enfermeroViewCrud import enfermero_detail_view
 from .familiarView import familiar_api_view
@@ -18,3 +19,9 @@ from .detallesignosView import detallesignos_api_view
 from .detallesignosView import detallesignos_detail_view
 from .sugerenciaView import sugerencia_api_view
 from .sugerenciaView import sugerencia_detail_view
+=======
+#from .enfermeroViewCrud import enfermero_api_view
+#from .enfermeroViewCrud import enfermero_detail_view
+from .enferCreateViewCrud import EnferView
+
+>>>>>>> 36d994949627123dfbbf025f32099bc54f8c969a
