@@ -44,7 +44,7 @@
     methods: {
       processSignUp: function () {
         axios
-          .post("https://dashboard.heroku.com/apps/unal-hos-db", this.user, {
+          .post("https://hospi-ba.herokuapp.com//login/", this.user, {
             headers: {},
           })
           .then((result) => {
