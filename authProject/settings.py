@@ -27,6 +27,7 @@ SECRET_KEY = 'django-insecure-6o-y=v5w177crf^-s^lv1y#utsy08+q+txr8mu%z$4#gs!=9%$
 DEBUG = True
 
 ALLOWED_HOSTS = []
+CORS_ALLOW_ALL_ORIGINS = True
 
 
 # Application definition
@@ -40,7 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'corsheaders',
     'rest_framework',
-    'authApp',
+    'authApp'
 ]
 
 SIMPLE_JWT = {
